@@ -1,11 +1,6 @@
-const removeFromArray = function(array, toRemove, toRemove2, toRemove3) {
+const removeFromArray = function(array, ...toRemove) {
 
-    finalArray = []
-
-    const index = array.indexOf(toRemove)
-
-    fin = array.splice(index, 1)
-    return fin
+    return array.filter(val => !toRemove.includes(val))
 };
 
 
